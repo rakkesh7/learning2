@@ -3,17 +3,15 @@ let my =confirm("let's play rock,paper,scissor ");
 if (my){
     while(my)
 { let plaYer=prompt("please enter rock,paper or scissor");
-    console.log(plaYer)
-    plaYer=toPropercase(plaYer);   
-    console.log(plaYer) 
+     
     if(plaYer)
-    {
-              
+    { plaYer=toPropercase(plaYer); 
         if(plaYer==="rock"||plaYer==="scissor"||plaYer==="paper")
         {
             let comP = Math.floor(Math.random()*3);
+            console.log(comP)
             let possibles=["rock","paper","scissor"]
-            let comPuter=possibles[comP-1]
+            let comPuter=possibles[comP]
             let reSult=comPuter===plaYer?"tie":
             comPuter==="scissor"&&plaYer==="paper"?`you ${plaYer}\ncomputer ${comPuter}\ncomputer wins`:
             comPuter==="paper"&&plaYer==="rock"?`you ${plaYer}\ncomputer ${comPuter}\ncomputer wins`:
