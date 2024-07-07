@@ -1,0 +1,17 @@
+*
+
+
+
+body{
+    background-color:  black;
+}
+.h1{
+    position: relative;
+    margin-top: 10%;
+    font-size:100px;
+}
+p{
+    position: relative;
+    margin-left: 30%;
+    font-size:70px;
+}
